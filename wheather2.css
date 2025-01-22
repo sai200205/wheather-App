@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* Basic styling */
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease;
+}
+
+.weather-app {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.search input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#searchBtn,
+#convertBtn,
+#locateMeBtn {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.weather-info h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.weather-info p {
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+/* Icons for each information */
+.temperature-icon::before {
+    content: "🌡️";
+}
+
+.wind-icon::before {
+    content: "💨";
+}
+
+.sea-level-icon::before {
+    content: "🌊";
+}
+
+.pressure-icon::before {
+    content: "🔽";
+}
+
+.timezone-icon::before {
+    content: "⏰";
+}
+
+.coordinates-icon::before {
+    content: "📍";
+}
+
+.sunrise-icon::before {
+    content: "🌅";
+}
+
+.sunset-icon::before {
+    content: "🌇";
+}
+
+.sunset-icon::before {
+    content: "🌇";
+}
+
+/* Background images for weather conditions */
+.clear-sky {
+    background-image: url('https://th.bing.com/th/id/OIP.axpS3MIe14TCzEbqesiyVgHaEo?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clouds {
+    background-image: url('https://th.bing.com/th/id/OIP.SVV2ulsOqRc6HwOZLuuiQgHaE8?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rain {
+    background-image: url('https://s7d2.scene7.com/is/image/TWCNews/weather_rain_umbrellawalkingjpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.snow {
+    background-image: url('https://604now.com/wp-content/uploads/2019/02/vancouver-snow.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thunderstorm {
+    background-image: url('https://www.vmcdn.ca/f/files/via/images/thunderstorms.jpg;w=960');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.default_handle {
+    background-image: url('https://www.ksnt.com/wp-content/uploads/sites/86/2016/03/sunshine_36366417_ver1.0-8.jpg?w=2560&h=1440&crop=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

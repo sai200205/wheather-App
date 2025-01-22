@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="weather-app">
+        <h1>Weather Now</h1>
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div class="weather-info">
+            <h2 id="cityName"></h2>
+            <h3 id="currentWeather"></h3>
+            <div class="d-none" id="list">
+                <p><span class="icon temperature-icon"></span><span id="temperature"></span></p>
+                <p><span class="icon wind-icon"></span><span id="windSpeed"></span></p>
+                <p><span class="icon sea-level-icon"></span><span id="seaLevel"></span></p>
+                <p><span class="icon pressure-icon"></span><span id="pressure"></span></p>
+                <p><span class="icon timezone-icon"></span><span id="timezone"></span></p>
+                <p><span class="icon coordinates-icon"></span><span id="coordinates"></span></p>
+                <p><span class="icon sunrise-icon"></span><span id="sunrise"></span></p>
+                <p><span class="icon sunset-icon"></span><span id="sunset"></span></p>
+            </div>
+            <button id="convertBtn">°C / °F</button>
+        </div>
+        <button id="locateMeBtn">📍 Locate Me</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
